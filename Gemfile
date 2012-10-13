@@ -6,6 +6,10 @@ gem 'gravatar_image_tag', '1.0.0.pre2'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+group :production, :staging do
+  gem 'pg', '0.14.1'
+end
+
 group :development, :test do
   gem 'sqlite3', :require => 'sqlite3'
 end
